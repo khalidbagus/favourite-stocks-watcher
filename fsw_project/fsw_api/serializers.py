@@ -39,52 +39,52 @@ class CompaniesBySubindustySerializer(serializers.ModelSerializer):
         model = Company 
         fields = ['symbol', 'company_name', 'subindustry']
 
-class CompanyPerformanceSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CompanyPerformance
-        fields = '__all__'
+# class CompanyPerformanceSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = CompanyPerformance
+#         fields = '__all__'
 
-class CompanyReportSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CompanyReport
-        fields = '__all__'
+# class CompanyReportSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = CompanyReport
+#         fields = '__all__'
 
-class SubsectorReportSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Subsector
-        fields = '__all__'
+# class SubsectorReportSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Subsector
+#         fields = '__all__'
 
-class MostTradedStockSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = MostTradedStock
-        fields = '__all__'
+# class MostTradedStockSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = MostTradedStock
+#         fields = '__all__'
 
-class TopRankedCompanySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TopRankedCompany
-        fields = '__all__'
+# class TopRankedCompanySerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = TopRankedCompany
+#         fields = '__all__'
 
-class TopCompanyMoverSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TopCompanyMover
-        fields = '__all__'
+# class TopCompanyMoverSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = TopCompanyMover
+#         fields = '__all__'
 
-class TopCompanyGrowthSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TopCompanyGrowth
-        fields = '__all__'
+# class TopCompanyGrowthSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = TopCompanyGrowth
+#         fields = '__all__'
 
-class IDXMarketCapSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = IDXMarketCap
-        fields = '__all__'
+# class IDXMarketCapSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = IDXMarketCap
+#         fields = '__all__'
 
-class DailyTransactionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = DailyTransaction
-        fields = '__all__'
+# class DailyTransactionSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = DailyTransaction
+#         fields = '__all__'
 
-class IndexDailyTransactionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = IndexDailyTransaction
-        fields = '__all__'
+# class IndexDailyTransactionSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = IndexDailyTransaction
+#         fields = '__all__'

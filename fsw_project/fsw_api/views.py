@@ -81,119 +81,119 @@ class CompaniesBySubindustryView(ListAPIView):
     def list(self, request):
     """
 
-class CompanyPerformanceView(ListAPIView):
-    queryset = CompanyPerformance.objects.all()
-    serializer_class = CompanyPerformanceSerializer
+# class CompanyPerformanceView(ListAPIView):
+#     queryset = CompanyPerformance.objects.all()
+#     serializer_class = CompanyPerformanceSerializer
     
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        ticker = self.request.query_params.get('ticker', None)
-        if ticker:
-            queryset = queryset.filter(company__symbol=ticker)
-        return queryset
+#     def get_queryset(self):
+#         queryset = super().get_queryset()
+#         ticker = self.request.query_params.get('ticker', None)
+#         if ticker:
+#             queryset = queryset.filter(company__symbol=ticker)
+#         return queryset
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
 
-class CompanyReportView(ListAPIView):
-    queryset = CompanyReport.objects.all()
-    serializer_class = CompanyReportSerializer
+# class CompanyReportView(ListAPIView):
+#     queryset = CompanyReport.objects.all()
+#     serializer_class = CompanyReportSerializer
     
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        ticker = self.request.query_params.get('ticker', None)
-        section = self.request.query_params.get('section', None)
+#     def get_queryset(self):
+#         queryset = super().get_queryset()
+#         ticker = self.request.query_params.get('ticker', None)
+#         section = self.request.query_params.get('section', None)
 
-        if ticker:
-            queryset = queryset.filter(company__symbol=ticker)
+#         if ticker:
+#             queryset = queryset.filter(company__symbol=ticker)
 
-        if section and section in ['overview', 'valuation', 'future', 'peers', 'financials', 'dividend', 'management', 'ownership']:
-            queryset = queryset.values('company', section) 
+#         if section and section in ['overview', 'valuation', 'future', 'peers', 'financials', 'dividend', 'management', 'ownership']:
+#             queryset = queryset.values('company', section) 
 
-        return queryset
+#         return queryset
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class SubsectorReportView(ListAPIView):
-    queryset = SubsectorReport.objects.all()
-    serializer_class = SubsectorReportSerializer
+# class SubsectorReportView(ListAPIView):
+#     queryset = SubsectorReport.objects.all()
+#     serializer_class = SubsectorReportSerializer
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        sub_sector = self.request.query_params.get('sub_sector', None)
+#     def get_queryset(self):
+#         queryset = super().get_queryset()
+#         sub_sector = self.request.query_params.get('sub_sector', None)
 
-        if sub_sector:
-            queryset = queryset.filter(subsector__name=sub_sector)
-        return queryset
+#         if sub_sector:
+#             queryset = queryset.filter(subsector__name=sub_sector)
+#         return queryset
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-# TO DO LATER
-class MostTradedStockView(ListAPIView):
-    queryset = MostTradedStock.objects.all()
-    serializer_class = MostTradedStockSerializer
+# # TO DO LATER
+# class MostTradedStockView(ListAPIView):
+#     queryset = MostTradedStock.objects.all()
+#     serializer_class = MostTradedStockSerializer
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        start = self.request.query_params.get('start', None)
-        end = self.request.query_params.get('end', None)
-        n_stock = self.request.query_params.get('n_stock', None)
-        adjusted = self.request.query_params.get('adjusted', None)
-        sub_sector = self.request.query_params.get('sub_sector', None)
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     def get_queryset(self):
+#         queryset = super().get_queryset()
+#         start = self.request.query_params.get('start', None)
+#         end = self.request.query_params.get('end', None)
+#         n_stock = self.request.query_params.get('n_stock', None)
+#         adjusted = self.request.query_params.get('adjusted', None)
+#         sub_sector = self.request.query_params.get('sub_sector', None)
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class TopRankedCompanyView(ListAPIView):
-    queryset = TopRankedCompany.objects.all()
-    serializer_class = TopRankedCompanySerializer
+# class TopRankedCompanyView(ListAPIView):
+#     queryset = TopRankedCompany.objects.all()
+#     serializer_class = TopRankedCompanySerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class TopCompanyMoverView(ListAPIView):
-    queryset = TopCompanyMover.objects.all()
-    serializer_class = TopCompanyMoverSerializer
+# class TopCompanyMoverView(ListAPIView):
+#     queryset = TopCompanyMover.objects.all()
+#     serializer_class = TopCompanyMoverSerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class TopCompanyGrowthView(ListAPIView):
-    queryset = TopCompanyGrowth.objects.all()
-    serializer_class = TopCompanyGrowthSerializer
+# class TopCompanyGrowthView(ListAPIView):
+#     queryset = TopCompanyGrowth.objects.all()
+#     serializer_class = TopCompanyGrowthSerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class IDXMarketCapView(ListAPIView):
-    queryset = IDXMarketCap.objects.all()
-    serializer_class = IDXMarketCapSerializer
+# class IDXMarketCapView(ListAPIView):
+#     queryset = IDXMarketCap.objects.all()
+#     serializer_class = IDXMarketCapSerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class DailyTransactionView(ListAPIView):
-    queryset = DailyTransaction.objects.all()
-    serializer_class = DailyTransactionSerializer
+# class DailyTransactionView(ListAPIView):
+#     queryset = DailyTransaction.objects.all()
+#     serializer_class = DailyTransactionSerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
 
-class IndexDailyTransactionView(ListAPIView):
-    queryset = IndexDailyTransaction.objects.all()
-    serializer_class = IndexDailyTransactionSerializer
+# class IndexDailyTransactionView(ListAPIView):
+#     queryset = IndexDailyTransaction.objects.all()
+#     serializer_class = IndexDailyTransactionSerializer
     
-    """ Set up cacing mechanism
-    def list(self, request):
-    """
+#     """ Set up cacing mechanism
+#     def list(self, request):
+#     """
