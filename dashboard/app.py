@@ -87,12 +87,23 @@ def download_or_load_data(ticker, period):
     # Check if the CSV already exists
     if os.path.exists(file_path):
         st.write(f"Loading cached data for {ticker} ({period}, {interval})")
-        data = pd.read_csv(file_path, index_col='Datetime', parse_dates=True)
+        data = pd.read_csv(file_path, parse_dates=True)
+        
+        # Check for the correct date column and set it as index
+        if 'Datetime' in data.columns:
+            data.set_index('Datetime', inplace=True)
+        elif 'Date' in data.columns:
+            data.set_index('Date', inplace=True)
+        else:
+            st.error(f"Error: No 'Datetime' or 'Date' column found for {ticker}")
+            return None
     else:
         st.write(f"Downloading data for {ticker} ({period}, {interval})")
         data = yf.download(ticker, period=period, interval=interval)
-        data.to_csv(file_path)  # Save the data to CSV
-    
+        
+        # Save the data to CSV
+        data.to_csv(file_path)
+
     return data
 
 # Function to plot candlestick chart using Plotly
