@@ -1,0 +1,57 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  bangvel:
+    email: testest@gmail.com
+    name: Velshan
+    password: $2b$12$BfBEro2lObiAyguspKLq0uZ7bbMbAmlQHJ.9ZbDY8HXXpepXdzj/6
+  khalidtest:
+    email: khalidtest@gmail.com
+    name: khalidtest
+    password: $2b$12$AQuHAj5.Ocx890zf2WSTYemOqYQ0qhGSgNx5M2yr7sp54a5UkVyBK
+  test:
+    email: test@gmail.com
+    name: test
+    password: $2b$12$4CzTQccksKQLVj3VlK2fy.VUWvofGq5pBB4MIvwA3you5wd5wBH1m
+  testi:
+    email: testi@gmail.com
+    name: testi
+    password: $2b$12$RUVufcq3PxZ5iV6Bvws7Ve3mGGL3sUynWFcVYRqkk2y28i2/fqS.q
+  usernames:
+    bangvel:
+      email: testest@gmail.com
+      logged_in: false
+      name: Velshan
+      password: $2b$12$wm2RRWaMzGCqYI19tYq4geZkh0NfCri5xhD48d.nk5kGvB36hybGi
+    jsmith:
+      email: jsmith@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: John Smith
+      password: $2b$12$CZVvJ845i9QFRh0gUifpNuaONg3Zv5BbxA7j/w4cKxLfcCZL3c2Q.
+    khalidtest:
+      email: khalidtest@gmail.com
+      logged_in: false
+      name: khalidtest
+      password: $2b$12$ksDdmPNQbAt7YFN0WWLZwu9ul4lzIB67fx/LO4.MpwRLLEn0h9Ky2
+    rbriggs:
+      email: rbriggs@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: Rebecca Briggs
+      password: $2b$12$kYlr4X6HUICdMCp4nSSLQe0J6H6FciG6DQy8y4ltx/P7pD9UOHgo6
+    test:
+      email: test@gmail.com
+      logged_in: false
+      name: test
+      password: $2b$12$WImw3Kt8qZoms0d7xwfsEO9HbcLHDz339ipfhbqpRTJa9n70zlgni
+    testi:
+      email: testi@gmail.com
+      logged_in: false
+      name: testi
+      password: $2b$12$/yMjBUdZ.hmFk9tpxJoPTuQnvQE9YeIZCMPijjzzx1v4X3PIpCS4a
+pre-authorized:
+  emails:
+  - melsby@gmail.com
