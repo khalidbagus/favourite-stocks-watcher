@@ -21,7 +21,7 @@ Favorite Stock Watcher is a comprehensive stock analysis application that allows
 
 - **User Authentication**: Secure login and registration system using Streamlit Authenticator.
 - **Stock Selection**: Users can select up to three ticker symbols to compare.
-- **Real-Time Data Retrieval**: Utilizes Kafka and Spark Streaming to fetch the latest stock reports from the [Sectors API](https://api.sectors.app/).
+- **Real-Time Data Retrieval**: Utilizes Kafka and Spark Streaming to fetch the latest stock reports from the [Sectors API](https://sectors.app/).
 - **Data Storage**: Stores retrieved stock data in Cassandra for quick access on subsequent requests.
 - **Visualization**: Provides interactive visualizations using Streamlit and Altair, including price movements, company overviews, valuation comparisons, dividend comparisons, and financial comparisons.
 - **Modular Architecture**: Clean separation of concerns with Django REST API backend and Streamlit frontend.
@@ -84,7 +84,7 @@ Create a `.env` file in the `spark_script` directory with your Sectors API key:
 echo "SECTORS_API_KEY=your_api_key_here" > spark_script/.env
 ```
 
-Replace `your_api_key_here` with your actual API key from [Sectors API](https://api.sectors.app/).
+Replace `your_api_key_here` with your actual API key from [Sectors API](https://sectors.app/).
 
 #### 4.2 Django Settings
 
