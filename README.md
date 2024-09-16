@@ -43,7 +43,7 @@ The application consists of the following components:
 - **Python 3.8+**
 - **Virtualenv** or **Conda** for managing the Python environment.
 - **Git** for cloning the repository.
-- **Sectors API Key**: Obtain an API key from [Sectors API](https://api.sectors.app/).
+- **Sectors API Key**: Obtain an API key from [Sectors API](https://sectors.app/).
 - **PostgreSQL**: For the Django backend database.
 
 ## Installation
