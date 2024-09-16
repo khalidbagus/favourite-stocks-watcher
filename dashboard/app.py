@@ -134,7 +134,6 @@ def plot_valuation_comparison(reports):
     st.bar_chart(df_val.set_index('Ticker'))
 
 # Function to display company overview as two tables
-# Function to display company overview as two tables
 def display_company_overview_split(report):
     overview = report['overview']
     

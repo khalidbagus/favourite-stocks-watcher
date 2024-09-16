@@ -11,6 +11,10 @@ credentials:
     email: khalidtest@gmail.com
     name: khalidtest
     password: $2b$12$AQuHAj5.Ocx890zf2WSTYemOqYQ0qhGSgNx5M2yr7sp54a5UkVyBK
+  teamalgo:
+    email: teamalgo@gmail.com
+    name: teamalgo
+    password: $2b$12$BMa56wzm.CgIqkjy.LIDzesIpNEaRXikejtFlC/Li3tmCZsyXMSqu
   test:
     email: test@gmail.com
     name: test
@@ -19,6 +23,10 @@ credentials:
     email: testi@gmail.com
     name: testi
     password: $2b$12$RUVufcq3PxZ5iV6Bvws7Ve3mGGL3sUynWFcVYRqkk2y28i2/fqS.q
+  testo:
+    email: testo@gmail.com
+    name: testo
+    password: $2b$12$LoH96TA.HMq2BPC9PGcWMuzfAKc3/t7uswtVN3qVy7donkwfPOIqK
   usernames:
     bangvel:
       email: testest@gmail.com
@@ -42,6 +50,11 @@ credentials:
       logged_in: false
       name: Rebecca Briggs
       password: $2b$12$kYlr4X6HUICdMCp4nSSLQe0J6H6FciG6DQy8y4ltx/P7pD9UOHgo6
+    teamalgo:
+      email: teamalgo@gmail.com
+      logged_in: false
+      name: teamalgo
+      password: $2b$12$06mlDAfJLkKk5mrnmH2y1eVk1hWc3mKftxwzAqMtdIFaGQsWuLC8S
     test:
       email: test@gmail.com
       logged_in: false
@@ -52,6 +65,11 @@ credentials:
       logged_in: false
       name: testi
       password: $2b$12$/yMjBUdZ.hmFk9tpxJoPTuQnvQE9YeIZCMPijjzzx1v4X3PIpCS4a
+    testo:
+      email: testo@gmail.com
+      logged_in: false
+      name: testo
+      password: $2b$12$bvyfgMN0KqFhusy.QScSZ.d6eGOhM1QF2VthIgg229RX52kqiu7GG
 pre-authorized:
   emails:
   - melsby@gmail.com

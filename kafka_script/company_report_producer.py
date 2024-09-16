@@ -10,7 +10,7 @@ def get_company_by_ticker(ticker):
     api_url = f"http://localhost:8000/api/get-companies?ticker={ticker}"
     response = requests.get(api_url)
     if response.status_code == 200:
-        return response.json()  # Assuming the response contains a company object
+        return response.json()  
     return None
 
 def produce_ticker(ticker):
@@ -21,7 +21,7 @@ def produce_ticker(ticker):
     
     company = get_company_by_ticker(ticker)
     if company:
-        ticker_symbol = company[0]['symbol']  # Assuming the first result contains the company info
+        ticker_symbol = company[0]['symbol'] 
         producer.send(TOPIC_NAME, {"ticker": ticker_symbol})
         print(f"Produced {ticker_symbol} to {TOPIC_NAME}")
 
